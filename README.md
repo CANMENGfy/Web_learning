@@ -14,3 +14,10 @@ $ git log
 $ git remote add origin url
 $ git push -u origin master (第一次提交需要)
 ```
+## 场景二：
+
+```
+$
+$
+
+```

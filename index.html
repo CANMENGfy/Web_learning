@@ -6,15 +6,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="./style.css" />
-	<script type="text/javascript" src="./script.js">
-
-	</script>
+	<!-- <script type="text/javascript" src="./script.js"></script> -->
+	<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-	<h1>7月12日第二节课</h1>
-	<h2>git和github学习</h1>
-	<img src="https://count.getloli.com/get/@:CANMENG?theme=moebooru" alt=":name" />
+
+	<!-- <img src="https://count.getloli.com/get/@:CANMENG?theme=moebooru" alt=":name" /> -->
+	<div class="bg">
+		<div class="wai">
+			<div class="p1 pic">
+				<div class="txt">
+					<div class="pt1"></div>
+					<div class="pt2"></div>
+				</div>
+			</div>
+			<div class="p2 pic">
+				<div class="txt">
+					<div class="pt1"></div>
+					<div class="pt2"></div>
+				</div>
+			</div>
+			<div class="p3 pic">
+				<div class="txt">
+					<div class="pt1"></div>
+					<div class="pt2"></div>
+				</div>
+			</div>
+			<div class="p4 pic">
+				<div class="txt">
+					<div class="pt1"></div>
+					<div class="pt2"></div>
+				</div>
+			</div>
+		</div>
+		<h1>7月12日第二节课</h1>
+		<h2>git和github学习</h1>
+	</div>
+
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(".pic").hover(function() {
+			$(this).stop(true).animate({
+				width: "789px"
+			}, 500).siblings().stop(true).animate({
+				width: "100px"
+			}, 500);
+		});
+	</script>
+
 </body>
 
 </html>

@@ -8,3 +8,5 @@
 * 1.学习CSS的格式和调用方法
 * 2.更名 text1 -> Web_learning
 * 3.整理文件将其条理化
+
+![avatar](http://baidu.com/pic/doge.png)

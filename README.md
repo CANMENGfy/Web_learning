@@ -1,23 +1,10 @@
-## 场景一：把现有的项目或新项目用Git管理
+## Day01
 
-```
-$ mkdir test
-$ cd test
-$ git init
-$ touch index.html
-$ git status
-$ git log
-$ git add index.html
-$ git status
-$ git commit -m ''
-$ git log
-$ git remote add origin url
-$ git push -u origin master (第一次提交需要)
-```
-## 场景二：
+1.学习git和Github的使用
+2.HTML的基本机构和语法
 
-```
-$
-$
+## Day02
 
-```
+1.学习CSS的格式和调用方法
+2.更名 text1 -> Web_learning
+3.整理文件将其条理化

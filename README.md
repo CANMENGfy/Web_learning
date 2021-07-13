@@ -1,3 +1,6 @@
+## 用于记录实训学习过程
+![avatar](https://img0.baidu.com/it/u=177276548,2104625968&fm=26&fmt=auto&gp=0.jpg)
+
 ## Day01
 
 * 1.学习git和Github的使用

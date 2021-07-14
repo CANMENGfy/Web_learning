@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(224, 124, 30, 0.4);
+            color: #fff;
+            float: left;
+        }
+
+        .box1{
+            border: 10px solid rgb(89, 255, 47);
+            margin: 20px;
+            /* 上下的边距 */
+        }
+
+        .box2{
+            border: 10px dashed blue;
+            margin: 20px 40px;
+            /* 上下、左右的边距 */
+        }
+
+        .box3{
+            border-right: 20px dashed yellow;
+            margin: 20px 30px 40px;
+            /* 上 左右 下 的边距 */
+        }
+
+        .box4{
+            border-top: 10px solid greenyellow;
+            border-right: 20px dashed blue;
+            border-left: 30px solid pink;
+            border-bottom: 40px dashed yellow;
+            margin: 20px 30px 40px 50px;
+            /* 上 右 下 左 的边距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+</html>

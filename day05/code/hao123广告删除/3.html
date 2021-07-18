@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .ad {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .ad img {
+            width: 90px;
+            height: 90px;
+            transition: all .2s;
+        }
+
+        .ad img:hover {
+            width: 110px;
+            height: 110px;
+        }
+
+        .ad .close-btn {
+            /* 绝对定位：是相当于它最近的、已定位的祖先元素来定位的，如果没有这样的祖先元素，则直接相对body定位。 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -10px;
+            margin-top: -8px;
+            display: block;  /*将行内元素变成块级元素*/
+            width: 22px;
+            height: 22px;
+            background: url(./images/hao123.png) no-repeat -512px -208px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad" id="J_ad">
+        <a href="http://hao123.com/" target="_blank">
+            <img src="./images/dati.png" alt="答题有礼">
+        </a>
+        <span class="close-btn" onclick="document.getElementById('J_ad').style.display = 'none'"></span>
+    </div>
+</body>
+</html>

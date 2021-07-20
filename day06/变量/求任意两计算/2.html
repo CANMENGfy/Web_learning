@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="第一个数" id="numOne">
+        +
+        <input type="text" placeholder="第二个数" id="numTwo">
+        =
+        <input type="text" disabled id="result">
+        <button type="button" id="btn">计算</button>
+    </form>
+    <script>
+        // 分别获取第一个数、第二个数、计算结果以及计算按钮的元素对象
+        // 并赋值给变量oNumOne,oNumTwo
+        var oNumOne = document.getElementById('numOne');
+        var oNumTwo = document.getElementById('numTwo');
+
+        // 获取计算结果的变量赋值给oResult
+        var oResult = document.getElementById('result')
+        
+        // 获取计算按钮并赋值给oBtn
+        var oBtn = document.getElementById('btn')
+
+        // 计算按钮绑定鼠标点击事件
+        oBtn.onclick = function() {
+        //获取第一个数和第二个数的值
+        
+        var sNumOne = oNumOne.value;
+        var sNumTwo = oNumTwo.value;
+        
+        //将第一个数和第二个数分别进行类型转换
+        var numOne = parseFloat(sNumOne)
+        var numTwo = parseFloat(sNumTwo)
+
+        // 将求和的结果显示出来
+        console.log(sNumOne, sNumTwo, typeof sNumOne, typeof numOne);
+        var result = 0;
+        result = numOne + numTwo;
+        console.log(result ,typeof result);
+
+        oResult.value = result;
+
+        }
+    </script>
+</body>
+</html>

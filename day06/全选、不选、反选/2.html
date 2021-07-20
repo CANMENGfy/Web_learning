@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="quanxuan">全选</button>
+    <button id="buxuan">不选</button>
+    <button id="fanxuan">反选</button>
+    <div id="input">
+        <input type="checkbox"><br/>
+        <input type="checkbox"><br/>
+        <input type="checkbox"><br/>
+        <input type="checkbox"><br/>
+        <input type="checkbox"><br/>
+        <input type="checkbox"><br/>
+    </div>
+    <br>
+    <input type="checkbox">
+    <script>
+        // 获取全选按钮元素对象
+        var oQuanxuan = document.getElementById('quanxuan')
+
+        //获取不选元素对象
+        var oBuxuan = document.getElementById('buxuan')
+
+        //获取反选元素对象
+        var oFanxuan = document.getElementById('fanxuan')
+
+        //获取id等于input的div元素对象，并赋值给变量oInput
+        var oInput = document.getElementById('input')
+
+        //获取div下所有的input元素对象，并赋值给变量aInput
+        var aInput = oInput.getElementsByTagName('input')
+
+        //全选
+        oQuanxuan.onclick = function() {
+            for(var i = 0; i < aInput.length; i++){
+                aInput[i].checked = true;
+            }
+        }
+
+        //不选
+        oBuxuan.onclick = function() {
+            for(var i = 0; i < aInput.length; i++){
+                aInput[i].checked = false;
+            }
+        }
+
+        //反选
+        oFanxuan.onclick = function(){
+            for(var i = 0; i < aInput.length; i++){
+                if (aInput[i].checked === true) {
+                    aInput[i].checked = false;
+                } else {
+                    aInput[i].checked = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
